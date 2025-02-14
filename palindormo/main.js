@@ -39,6 +39,7 @@ function isPalidrome(word) {
   }
 }
 
+// dare un ritorno sul risultato
 const result = isPalidrome(userWord)
 
 
