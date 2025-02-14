@@ -14,14 +14,14 @@ const userNumb = 5;
 
 // generiamo un numero randomico per il pc - pcNumb = Math.random
 
-const pcNumb = Math.ceil(Math.random() * 5 )
+const pcNumb = Math.ceil(Math.random() * 5)
 
 console.log(userNumb, pcNumb);
 
-
 // sommiamo i due numeri 
-const sum = pcNumb + userNumb
+// const sum = pcNumb + userNumb
 
+/*
 // stabiliamo se la somma sia pari o dispari  e dichiariamo il vincitore
 if (sum % 2 === 0 && userChoice == 'pari'){
   console.log('you win');  
@@ -32,4 +32,24 @@ if (sum % 2 === 0 && userChoice == 'pari'){
   console.log('You lose :( try again');
   
 }
+ */
 
+function isEven(num1, num2) {
+
+  const sum = num1 + num2
+
+  if (sum % 2 === 0) {
+    return true
+  }
+  return false
+}
+
+if (isEven(pcNumb, userNumb) && userChoice == 'pari') {
+  console.log('yuo win!');
+} else if (isEven(pcNumb , userNumb) == false && userChoice == 'dispari'){
+  console.log('yuo win!');
+  
+} else {
+  console.log('You lose :( try again');
+  
+}
