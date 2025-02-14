@@ -5,18 +5,19 @@
 
 // chiediamo all'utente di scegliere tra pari e dispari - userChoice = prompt(...)
 
-const userChoice = 'dispari';
+const userChoice = prompt('Scegli tra pari o dispari');
 
 // chiediamo di selezionare un numero da 1 a 5 - userNumb = prompt(...)
 
-const userNumb = 5;
+const userNumb = Number(prompt('Scegli un numero da 1 a 5'))
 
 
 // generiamo un numero randomico per il pc - pcNumb = Math.random
 
 const pcNumb = Math.ceil(Math.random() * 5)
 
-console.log(userNumb, pcNumb);
+alert(` il tuo numero : ${userNumb}
+  numero del pc : ${pcNumb}`)
 
 // sommiamo i due numeri 
 // const sum = pcNumb + userNumb
@@ -45,11 +46,11 @@ function isEven(num1, num2) {
 }
 
 if (isEven(pcNumb, userNumb) && userChoice == 'pari') {
-  console.log('yuo win!');
-} else if (isEven(pcNumb , userNumb) == false && userChoice == 'dispari'){
-  console.log('yuo win!');
-  
+  alert('yuo win!');
+} else if (isEven(pcNumb, userNumb) == false && userChoice == 'dispari') {
+  alert('yuo win!');
+
 } else {
-  console.log('You lose :( try again');
-  
+  alert('You lose :( try again');
+
 }
