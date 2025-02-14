@@ -14,7 +14,15 @@ const userNumb = Number(prompt('Scegli un numero da 1 a 5'))
 
 // generiamo un numero randomico per il pc - pcNumb = Math.random
 
-const pcNumb = Math.ceil(Math.random() * 5)
+// const pcNumb = Math.ceil(Math.random() * 5)
+
+function getRandomNumbr(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+const pcNumb = getRandomNumbr(1, 5)
+console.log(pcNumb);
+
 
 alert(` il tuo numero : ${userNumb}
   numero del pc : ${pcNumb}`)
