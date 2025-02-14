@@ -5,7 +5,7 @@
 
 // chiedere all'utente di inserire una parola - userWord = prompt(...)
 
-let userWord = 'abba';
+let userWord = prompt('write a word')
 
 
 
@@ -26,7 +26,7 @@ for (let i = 0; i < userWord.length / 2; i++) {
 // Creare una funzione
 
 function isPalidrome(word) {
-  
+  // controllare se la prima meta` della parola corrisponde alla seconda
   const wordLenght = word.length
 
   for (let i = 0; i < wordLenght / 2; i++) {
@@ -42,6 +42,6 @@ function isPalidrome(word) {
 const result = isPalidrome(userWord)
 
 
-console.log(result);
+alert(`your word : "${userWord}" ${result}`);
 
 
